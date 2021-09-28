@@ -1,0 +1,42 @@
+import 'package:flutter/foundation.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+
+
+showNotification({title, body}) async {
+  var android = AndroidNotificationDetails(
+    'channel id', 'channel NAME', 'CHANNEL DESCRIPTION',
+    priority: Priority.high, importance: Importance.max,
+  );
+  var iOS = IOSNotificationDetails();
+  var platform = NotificationDetails(android: android, iOS: iOS);
+  await flutterLocalNotificationsPlugin.show(
+    0,
+    '$title',
+    '$body',
+    platform,
+    payload: 'AndroidCoding.in',
+  );
+}
+
+Future onSelectNotification(String payload) {
+  debugPrint("payload : $payload");
+  print("============");
+}
+
+FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =  FlutterLocalNotificationsPlugin();
+
+void localNotification() {
+  // initialise the plugin. app_icon needs to be a added as a drawable resource to the Android head project
+  const AndroidInitializationSettings android =
+  AndroidInitializationSettings('@mipmap/ic_launcher');
+  final IOSInitializationSettings iOS = IOSInitializationSettings(
+    // onDidReceiveLocalNotification: onDidReceiveLocalNotification,
+  );
+  final InitializationSettings initializationSettings =
+  InitializationSettings(
+    android: android,
+    iOS: iOS,
+  );
+  flutterLocalNotificationsPlugin.initialize(initializationSettings,
+      onSelectNotification: onSelectNotification);
+}

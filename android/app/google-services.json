@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "224615790283",
+    "project_id": "azcourses-a4c7c",
+    "storage_bucket": "azcourses-a4c7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224615790283:android:b063f2680c134e2a7bcd4e",
+        "android_client_info": {
+          "package_name": "com.crazyidea.azcourses"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "224615790283-aol50d2ufj1lse9mv984estl011iihul.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAu6uyUkOdI2iSQ0NqCtuI9lpyf7Sk0FCo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "224615790283-aol50d2ufj1lse9mv984estl011iihul.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
