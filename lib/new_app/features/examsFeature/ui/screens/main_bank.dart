@@ -3,7 +3,7 @@ import 'package:azcourses/new_app/features/examsFeature/ui/screens/build_custom_
 import 'package:azcourses/new_app/features/examsFeature/ui/screens/exams_screen.dart';
 import 'package:azcourses/new_app/features/examsFeature/ui/screens/question_bank_screen.dart';
 import 'package:azcourses/new_app/features/groupsFeature/ui/screens/groups_screen.dart';
-import 'package:azcourses/new_app/features/libraryFeature/ui/screens/student_profile_screen.dart';
+import 'package:azcourses/new_app/features/libraryFeature/ui/screens/library_screen.dart';
 import 'package:azcourses/new_app/features/libraryFeature/ui/widgets/subject_grid.dart';
 import 'package:azcourses/new_app/features/libraryFeature/ui/widgets/subjects_sheet.dart';
 import 'package:azcourses/new_app/features/liveSessions/ui/screens/live_sessions_screen.dart';

@@ -1,7 +1,7 @@
 import 'package:azcourses/new_app/features/discussionsFeature/ui/screens/discussion_screen.dart';
 import 'package:azcourses/new_app/features/examsFeature/ui/screens/exams_screen.dart';
 import 'package:azcourses/new_app/features/groupsFeature/ui/screens/groups_screen.dart';
-import 'package:azcourses/new_app/features/libraryFeature/ui/screens/student_profile_screen.dart';
+import 'package:azcourses/new_app/features/libraryFeature/ui/screens/library_screen.dart';
 import 'package:azcourses/new_app/features/libraryFeature/ui/widgets/subjects_sheet.dart';
 import 'package:azcourses/new_app/features/liveSessions/ui/screens/live_sessions_screen.dart';
 import 'package:azcourses/new_app/ui/widget/profile_header.dart';
@@ -114,7 +114,7 @@ class _StudentProfileScreenState extends State<StudentProfileScreen> {
                               onTap: (id){
                                 Get.back();
                                 print('my id is ${id}');
-                                Get.to((int id)=>LibraryScreen()
+                                Get.to(()=>LibraryScreen()
                                 );
                               },
                             ),
